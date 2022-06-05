@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" >
     <title>Résumé</title>
-  </head>
-  <body>
-    ― Hello World! &#x1F609;
-  </body>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#Intro" class="nav-link active" aria-current="page">Intro</a></li>
+                <li class="nav-item"><a href="#Info" class="nav-link">Info</a></li>
+                <li class="nav-item"><a href="#Timeline" class="nav-link">Timeline</a></li>
+                <li class="nav-item"><a href="#Experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#Contact_me" class="nav-link">Contact me</a></li>
+            </ul>
+            </header>
+        </div>
+    </div>
+    
+    <hr class="narrow-line">
+
+    <div class="Intro" id="Intro">
+        <p class="header-block">Intro</p>
+        <img class="img-intro" src="img/photo-for-intro.JPG">
+        <p class="Intro">Доброго дня! Моє імʼя Мирослав, мені 19 років, я родом з міста Дніпро. Навчаюся в Київському політехнічному інституті на 2 курсі. У вільний від навчання час займаюсь вивченням програмування на платформі .NET. Цікавлюсь автомобілями та усім, що з ними повʼязано (змагання, водіння, ремонт тощо).</p>
+    </div>
+
+    <hr class="narrow-line">
+
+    <div class="Info" id="Info">
+        <p class="header-block">About me</p>
+
+        <div class="container1">
+            <img src="./img/photo-for-grid1.JPG"/>
+            <img src="./img/photo-for-grid2.jpg"/>
+            <img src="./img/photo-for-grid3.jpg"/>
+            <img src="./img/photo-for-grid4.jpg"/>
+            <img src="./img/photo-for-grid5.jpg"/>
+            <img src="./img/photo-for-grid6.jpg"/>
+        </div>
+        
+        <p>Я народився та виріс в місті Дніпро. Зараз навчаюся в Київському політехнічному інституті на 2 курсі спеціальності "Компʼютерні науки". Володію трьома мовами: українською, російською та англійською. Обожнюю подорожувати, проте останні декілька років не було нагоди відвідати іншу країну. Обожнюю автомобілі, бо з дитинства ними захоплювався. Також подобається кататися на BMX, раніше у мене був інтернет-магазин та майстерня з ремонту їх, проте вирішив, що варто рухатись далі. У вільний час намагаюся вивчати щось корисне, або займатися одними з своїх хобі. Більше цікавинок про мене можна дізнатися у розділі "My life".</p>
+
+    </div>
+
+    <hr class="narrow-line">
+
+    <div class="Timeline" id="Timeline">
+        <p class="header-block">My life</p>
+        <div class="select-dropdown">
+            <select id="select-year" name="year">
+                <option value="1">Повна біографія</option>
+                <option value="2">2003</option>
+                <option value="3">2007</option>
+                <option value="4">2009</option>
+                <option value="5">2010</option>
+                <option value="6">2013</option>
+                <option value="7">2014</option>
+                <option value="8">2018</option>
+                <option value="9">2019</option>
+                <option value="10">2020</option>
+                <option value="11">2021</option>
+            </select>
+        </div>
+        <div id="text"></div>
+    </div>
+
+    <hr class="narrow-line">
+
+    <div class="Experience" id="Experience">
+        <p class="header-block">My experience</p>
+        <p class="exp">Інтерес до програмування зʼявився під час навчання в ліцеї, там ми вивчали програмування на мові Java. Проте надалі я нею не користувався, бо у інституті ми почали вичення мов С та С++. Також намагався вивчати Python, але не сподобався синтаксис і було не зручно після строготипізованих мов, тож я вирішив вивчати С# та програмування на платформі .NET. Сподіваюся, що даний курс дасть мені достатньо знань для подальшого працевлаштування. Загалом все що я створював було направлене на навчання, а саме лабораторні роботи, курсові тощо. Останні декілька місяців зʼявилась нагода створювати щось для свого інтересу, проте щось чим я б міг пишатися ще не створив через брак знань та досвіду.</p>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="Contact me" id="Contact_me">
+
+            <ul class="list">
+                <li class="list-item">©2022 Yatsenko Myroslav</li>
+                <li>
+                    <ul class="list">
+                        <li><a href="tel:+380678806978" ><img class="img-item" src="img/phone.png"></a></li>
+                        <li><a href="mailto:mirik297@gmail.com" ><img class="img-item" src="img/email.png"></a></li>
+                        <li><a href="https://www.instagram.com/_m.i.r.o.s.l.a.v_y_/" ><img class="img-item" src="img/instagram.png"></a></li>
+                        <li><a href="http://t.me/mirik297" ><img class="img-item" src="img/telegram.png"></a></li>
+                    </ul>
+                </li>
+            </ul>   
+        </div>
+    </footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
